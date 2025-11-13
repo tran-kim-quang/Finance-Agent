@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import Optional
 
 # Fix encoding cho Windows
@@ -46,8 +46,7 @@ async def root():
     """Health check endpoint"""
     return {
         "status": "running",
-        "service": "Finance Agent API",
-        "version": "1.0.0"
+        "service": "Finance Agent API"
     }
 
 @app.get("/health")
