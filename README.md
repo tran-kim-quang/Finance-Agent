@@ -5,7 +5,7 @@
 ## Clone và tạo môi trường
 ```
 git clone https://github.com/tran-kim-quang/Finance-Agent.git
-cd finance_agent### Bước 2: Tạo virtual environment
+cd finance_agent
 
 python -m venv venv
 venv\Scripts\activate
